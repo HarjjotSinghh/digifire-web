@@ -1,0 +1,206 @@
+@tailwind base;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.9) hsl(var(--background));
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 24px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary));
+  border-radius: 24px;
+  border: 3px solid hsl(var(--background));
+}
+
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply lg:text-5xl text-4xl mb-6 font-bold;
+}
+h2 {
+  @apply lg:text-4xl text-3xl mb-6 font-bold;
+}
+h3 {
+  @apply lg:text-3xl text-2xl mb-4 font-bold;
+}
+h4 {
+  @apply lg:text-2xl text-xl mb-4 font-bold;
+}
+h5 {
+  @apply lg:text-xl text-lg mb-2 font-bold;
+}
+h6 {
+  @apply lg:text-lg text-base mb-2 font-bold;
+}
+.heading-light {
+  @apply opacity-60;
+}
+
+@layer base {
+  :root {
+    --font-arteria: "Arteria Regular";
+    --font-arteria-thin: "Arteria Thin";
+    --font-arteria-bold: "Arteria Bold";
+    --font-arteria-black: "Arteria Black";
+    --font-arteria-light: "Arteria Light";
+    --font-arteria-regular: "Arteria Regular";
+    --font-arteria-extrabold: "Arteria ExtraBold";
+    --font-arteria-extralight: "Arteria ExtraLight";
+    --font-arteria-demi: "Arteria Demi";
+
+    --background: 0 0% 98%;
+    --foreground: 90 8% 5%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 90 8% 5%;
+
+    --card-2: 172 66% 7%;
+    --card-2-foreground: 0 0% 98%;
+
+    --section: 172 100% 4%;
+    --section-foreground: 0 0% 98%;
+
+    --section-2: 172 66% 7%;
+    --section-2-foreground: 0 0% 98%;
+
+    --section-3: 150 36% 14%;
+    --section-3-foreground: 0 0% 98%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 90 8% 5%;
+
+    --primary: 87 96% 43%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 90 7% 94%;
+    --secondary-foreground: 90 8% 5%;
+
+    --muted: 90 7% 94%;
+    --muted-foreground: 90 6% 45%;
+
+    --accent: 90 7% 94%;
+    --accent-foreground: 90 8% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 80 6% 90%;
+    --input: 84 6% 83%;
+    --ring: 87 24% 75%;
+
+    --radius: 0.8rem;
+  }
+
+  .dark {
+    --background: 60 4% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 120 3% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 120 3% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 87 93% 55%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 60 2% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 90 2% 18%;
+    --muted-foreground: 84 2% 49%;
+
+    --accent: 87 18% 12%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 2% 12%;
+    --input: 90 2% 18%;
+    --ring: 87 93% 40%;
+  }
+
+  /* @font-face {
+    font-family: "Arteria Thin";
+    src: url("../fonts/Arteria-Std-Compress-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria Thin";
+    src: url("../fonts/Arteria-Std-Compress-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria ExtraBold";
+    src: url("../fonts/Arteria-Std-Compress-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria Black";
+    src: url("../fonts/Arteria-Std-Compress-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria Light";
+    src: url("../fonts/Arteria-Std-Compress-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria Regular";
+    src: url("../fonts/Arteria-Std-Compress-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria Bold";
+    src: url("../fonts/Arteria-Std-Compress-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria ExtraLight";
+    src: url("../fonts/Arteria-Std-Compress-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Arteria Demi";
+    src: url("../fonts/Arteria-Std-Compress-Demi.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  } */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
