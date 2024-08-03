@@ -130,7 +130,51 @@ h6 {
     --input: 90 2% 18%;
     --ring: 87 93% 40%;
   }
+  .red-theme {
+    --primary: 12 96% 43%;
 
+    --card-2: 12 66% 7%;
+    --card-2-foreground: 0 0% 98%;
+
+    --section: 12 100% 4%;
+    --section-foreground: 0 0% 98%;
+
+    --section-2: 12 66% 7%;
+    --section-2-foreground: 0 0% 98%;
+
+    --section-3: 12 56% 12%;
+    --section-3-foreground: 0 0% 98%;
+  }
+  .orange-theme {
+    --primary: 26 96% 43%;
+
+    --card-2: 26 66% 7%;
+    --card-2-foreground: 0 0% 98%;
+
+    --section: 26 100% 4%;
+    --section-foreground: 0 0% 98%;
+
+    --section-2: 26 66% 7%;
+    --section-2-foreground: 0 0% 98%;
+
+    --section-3: 26 76% 10%;
+    --section-3-foreground: 0 0% 98%;
+  }
+  .yellow-theme {
+    --primary: 49 96% 43%;
+
+    --card-2: 49 66% 7%;
+    --card-2-foreground: 0 0% 98%;
+
+    --section: 49 100% 4%;
+    --section-foreground: 0 0% 98%;
+
+    --section-2: 49 76% 6%;
+    --section-2-foreground: 0 0% 98%;
+
+    --section-3: 49 96% 7%;
+    --section-3-foreground: 0 0% 98%;
+  }
   /* @font-face {
     font-family: "Arteria Thin";
     src: url("../fonts/Arteria-Std-Compress-Thin.otf") format("opentype");

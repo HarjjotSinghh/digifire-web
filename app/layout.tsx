@@ -93,7 +93,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en" suppressHydrationWarning={true}>
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased selection:bg-primary/30 selection:text-foreground",
+            "min-h-screen bg-background font-sans antialiased selection:bg-primary/30 selection:text-foreground ",
             arteria.variable,
             arteria.className,
             urbanist.variable,

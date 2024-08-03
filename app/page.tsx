@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import {
@@ -58,29 +60,127 @@ const services = [
 
 const howWeWork = [
   {
-    title: "Initial Consultation",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempore nisi dolorem officiis at asperiores omnis. Voluptatem sequi a saepe veniam fugiat tempore, error perspiciatis.",
+    title: "Strategy & Consulting",
+    description: `At Digifire.io, we believe that a solid strategy is the foundation of any successful marketing campaign. Our expert consultants work closely with you to understand your business goals and craft a bespoke digital marketing strategy that drives results. Services include:
+    \n
+    • Digital Marketing Strategy Development\n
+    • Market Research and Analysis\n
+    • Competitor Analysis\n
+    • Brand Strategy and Positioning\n
+    • Customer Persona Development\n
+    • KPI Setting and Tracking\n
+    • Consulting and Auditing`,
   },
   {
-    title: "Stratergy Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempore nisi dolorem officiis at asperiores omnis. Voluptatem sequi a saepe veniam fugiat tempore, error perspiciatis.",
+    title: "Content Marketing",
+    description: `Engaging and high-quality content is crucial for attracting and retaining customers. Our content marketing services are designed to create and distribute valuable content that resonates with your target audience. Services include:
+    \n
+    • Content Strategy Development\n
+    • Blog Writing and Management\n
+    • Copywriting\n
+    • Infographic Design\n
+    • Video Production\n
+    • Podcast Production\n
+    • Case Studies and White Papers`,
   },
   {
-    title: "Execution & Implementation",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempore nisi dolorem officiis at asperiores omnis. Voluptatem sequi a saepe veniam fugiat tempore, error perspiciatis.",
+    title: "Search Engine Optimization",
+    description: `Increase your online visibility and attract more organic traffic with our comprehensive SEO services. We use the latest techniques and best practices to ensure your website ranks high on search engines. Services include:
+    \n
+    • On-Page SEO\n
+    • Off-Page SEO\n
+    • Technical SEO\n
+    • Local SEO\n
+    • SEO Audits\n
+    • Keyword Research and Analysis\n
+    • Link Building`,
   },
   {
-    title: "Continous Optimization",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempore nisi dolorem officiis at asperiores omnis. Voluptatem sequi a saepe veniam fugiat tempore, error perspiciatis.",
+    title: "Pay-Per-Click Advertising",
+    description: `Maximize your ROI with targeted PPC campaigns. Our team of experts will help you create, manage, and optimize your ads to reach your desired audience effectively. Services include:
+    \n
+    • Google Ads Management\n
+    • Bing Ads Management\n
+    • Display Advertising\n
+    • Retargeting Campaigns\n
+    • YouTube Advertising\n
+    • Shopping Ads`,
   },
   {
-    title: "Reporting & Communication",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempore nisi dolorem officiis at asperiores omnis. Voluptatem sequi a saepe veniam fugiat tempore, error perspiciatis.",
+    title: "Social Media Marketing",
+    description: `Harness the power of social media to build your brand and engage with your audience. We offer comprehensive social media marketing services to help you create a strong online presence. Services include:
+    \n
+    • Social Media Strategy\n
+    • Profile Setup and Optimization\n
+    • Content Creation and Posting\n
+    • Community Management\n
+    • Social Media Advertising\n
+    • Influencer Marketing\n
+    • Social Media Analytics and Reporting`,
+  },
+  {
+    title: "Email Marketing",
+    description: `Stay connected with your customers and drive conversions with personalized email marketing campaigns. Our services ensure that your emails are engaging, relevant, and effective. Services include:
+    \n
+    • Email Campaign Strategy\n
+    • Email List Building\n
+    • Email Design and Development\n
+    • Automated Email Sequences\n
+    • Newsletter Management\n
+    • A/B Testing and Optimization`,
+  },
+  {
+    title: "Web Development and Design",
+    description: `Create a stunning online presence with our web development and design services. We build responsive, user-friendly websites that not only look great but also perform well. Services include:
+    \n
+    • Website Design and Redesign\n
+    • Responsive Web Development\n
+    • E-commerce Development\n
+    • Landing Page Design\n
+    • UI/UX Design\n
+    • Website Maintenance and Updates`,
+  },
+  {
+    title: "E-commerce Marketing",
+    description: `Drive sales and grow your online store with our e-commerce marketing services. We offer a range of solutions to help you optimize your product listings and increase conversions. Services include:
+    \n
+    • E-commerce SEO\n
+    • Product Listing Optimization\n
+    • E-commerce PPC\n
+    • Cart Abandonment Solutions\n
+    • E-commerce Email Marketing`,
+  },
+  {
+    title: "Mobile Marketing",
+    description: `Reach your audience on the go with our mobile marketing services. From app marketing to SMS campaigns, we have the expertise to ensure your mobile presence is strong. Services include:
+    \n
+    • App Store Optimization (ASO)\n
+    • Mobile App Marketing\n
+    • SMS Marketing\n
+    • Mobile Advertising`,
+  },
+  {
+    title: "Affiliate Marketing",
+    description: `Expand your reach and boost your sales with our affiliate marketing services. We help you set up and manage effective affiliate programs that drive results. Services include:
+    \n
+    • Affiliate Program Setup\n
+    • Affiliate Recruitment\n
+    • Affiliate Management\n
+    • Performance Tracking`,
+  },
+  {
+    title: "Creative Services",
+    description: `Stand out from the crowd with our creative services. Our talented team of designers and creatives will help you build a strong brand identity that resonates with your audience. Services include:
+    \n
+    • Branding and Identity Design\n
+    • Logo Design\n
+    • Brand Guidelines Development\n
+    • Visual Branding\n
+    • Graphic Design\n
+    • Video Editing\n
+    • Photography\n
+    • Animation and Motion Graphics\n
+    • Packaging Design`,
   },
 ]
 
@@ -472,10 +572,10 @@ export default function IndexPage() {
                         {e.title}
                       </h1>
                       <p
-                        className={`text-lg max-w-lg ${
+                        className={`text-lg max-w-lg whitespace-pre-wrap leading-[24px] ${
                           index % 2 === 0
-                            ? "text-[#001412]/70"
-                            : "text-white/70"
+                            ? "text-[#001412]/80"
+                            : "text-white/80"
                         }`}
                       >
                         {e.description}
@@ -670,7 +770,7 @@ export default function IndexPage() {
         className="py-24 bg-section flex flex-col items-center justify-center gap-6 lg:p-16 p-8"
       >
         <div className="flex md:flex-row flex-col items-start justify-start max-w-7xl mx-auto size-full bg-section-2 rounded-lg p-8 md:gap-0 gap-8">
-          <div className="md:w-1/2 w-full">
+          {/* <div className="md:w-1/2 w-full">
             <h4 className="font-arteria font-extrabold mb-6 underline decoration-primary text-left">
               CONTACT US
             </h4>
@@ -718,8 +818,8 @@ export default function IndexPage() {
                 />
               </div>
             </form>
-          </div>
-          <div className="md:w-1/2 w-full min-h-full flex-1 relative">
+          </div> */}
+          <div className="w-full min-h-full flex-1 relative">
             <img
               className="absolute top-0 left-0 w-full h-full object-cover -z-[0] rounded-lg"
               src="https://images.pexels.com/photos/6984996/pexels-photo-6984996.jpeg"
@@ -742,7 +842,7 @@ export default function IndexPage() {
                     <InputBlock
                       root={{ variant: "underlined", size: "lg" }}
                       placeholder="John Doe"
-                      type="email"
+                      type="text"
                       className="text-xl font-semibold placeholder:!text-foreground/50"
                     />
                   </div>
@@ -759,12 +859,23 @@ export default function IndexPage() {
                   </div>
                   <div>
                     <span className="text-foreground/50 font-semibold text-base">
+                      Phone Number
+                    </span>
+                    <InputBlock
+                      root={{ variant: "underlined", size: "lg" }}
+                      placeholder="+91 1234567890"
+                      type="text"
+                      className="text-xl font-semibold placeholder:!text-foreground/50"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-foreground/50 font-semibold text-base">
                       Message
                     </span>
                     <InputBlock
                       root={{ variant: "underlined", size: "lg" }}
                       placeholder="How can we help you?"
-                      type="email"
+                      type="text"
                       className="text-xl font-semibold placeholder:!text-foreground/50"
                     />
                   </div>
