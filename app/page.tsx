@@ -419,112 +419,6 @@ export default function IndexPage() {
           </span>{" "}
           FRESH APPROACH
         </h1>
-        <div className="mt-16  max-w-7xl mx-auto ">
-          <div className="flex md:px-24 px-4 lg:flex-row flex-col lg:gap-16 gap-8 items-center justify-center">
-            <Image
-              src="/images/section-1-1.jpg"
-              alt="Section Image 1"
-              width={1000}
-              height={1400}
-              className="xl:w-auto xl:h-[600px] w-[500px] h-auto object-bottom rounded-lg object-cover xl:aspect-[2.5/3] aspect-[2/2] select-none"
-              draggable={false}
-            />
-            <div className="flex flex-col gap-4 items-start justify-start">
-              <p className="text-foreground/80 text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti tempore nisi dolorem officiis at asperiores omnis.
-                Voluptatem sequi a saepe veniam fugiat tempore, error
-                perspiciatis quasi, eveniet atque quia esse? Quidem, voluptate.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti tempore nisi dolorem officiis at asperiores omnis.
-                Voluptatem sequi a saepe veniam fugiat tempore, error
-                perspiciatis quasi, eveniet atque quia esse? Quidem, voluptate.
-              </p>
-              <Link
-                href={"#services"}
-                className="flex flex-row items-center justify-center gap-4 mt-8 group"
-              >
-                <Button className="rounded-full" size={"icon"}>
-                  <ArrowRight className="size-4 group-hover:-rotate-45 transition-all duration-300 ease-in-out" />
-                </Button>
-                <h3 className="font-arteria mt-0.5 font-extrabold w-fit !mb-0">
-                  OUR SERVICES
-                </h3>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="flex bg-section flex-col items-center justify-center gap-4 py-24 lg:px-8 px-4">
-        <h1 className="font-arteria lg:text-8xl md:text-7xl text-6xl [font-weight:800] text-center lg:leading-[84px] leading-[52px] !mb-0">
-          ELEVATING BRANDS,
-          <br /> <span className="text-primary">EMPOWERING SUCCESS</span>
-        </h1>
-        <div className="-mt-12 flex flex-row items-end justify-center gap-4">
-          <h3 className="text-right sm:block hidden  max-w-[200px] font-extrabold font-arteria">
-            <span className="heading-light">WE CRAFT </span>CAPTIVATING
-            CAMPAIGNS <span className="heading-light">THAT LEAVE A</span>{" "}
-            LASTING IMPACT
-          </h3>
-          <video
-            src="https://videos.pexels.com/video-files/6248650/6248650-uhd_2560_1440_25fps.mp4"
-            autoPlay
-            loop
-            muted
-            width={400}
-            height={300}
-            className=" w-[400px] h-auto aspect-[3/2.2] top-0 object-cover z-10"
-          />
-          <h3 className="text-left sm:block hidden max-w-[210px] font-extrabold font-arteria">
-            WE ARE REVOLUTIONIZING{" "}
-            <span className="heading-light">BRAND{"'"}S ONLINE </span> PRESENCE
-          </h3>
-        </div>
-      </section>
-      <section
-        id={"services"}
-        className="flex bg-section-2  lg:gap-16 gap-8 py-24 lg:px-8 px-4"
-      >
-        <div className="flex relative md:flex-row flex-col items-start justify-between  w-full max-w-7xl mx-auto">
-          <div className="sticky top-8">
-            <h4 className="font-arteria font-extrabold underline decoration-primary">
-              OUR SERVICES
-            </h4>
-            <h1 className="font-arteria lg:text-8xl md:text-7xl text-6xl [font-weight:800] lg:leading-[84px] leading-[52px] !mb-0 text-left ">
-              <span className="heading-light">EXPLORE OUR</span>
-              <br /> EXPERTISE
-            </h1>
-            <p className="text-foreground/80 text-left max-w-sm mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              tempore nisi dolorem officiis at asperiores omnis. Voluptatem
-              sequi a saepe veniam fugiat tempore, error perspiciatis quasi,
-              eveniet atque quia esse?
-            </p>
-          </div>
-          <div className="flex flex-1  max-w-xl flex-col items-center justify-center md:gap-16 gap-12 mt-16">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="flex flex-row items-start justify-start gap-0 rounded-lg"
-              >
-                <Button
-                  size={"icon"}
-                  className="size-full mt-1.5 mr-12 w-full h-auto px-3 py-2.5 rounded-full max-w-[50px]"
-                >
-                  {service.Icon}
-                </Button>
-                <div>
-                  <h1 className="font-arteria md:text-7xl text-6xl [font-weight:800] uppercase !mb-4">
-                    {service.title}
-                  </h1>
-                  <p className="text-foreground/80 text-lg">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
       <section
         id="how-we-work"
@@ -550,7 +444,7 @@ export default function IndexPage() {
             {howWeWork.map((e, index) => (
               <div
                 key={e.title}
-                className={`flex sticky top-0 md:flex-row flex-col-reverse items-start w-full justify-center lg:gap-24 gap-12 lg:p-16 md:p-12 p-8   ${
+                className={`flex  md:flex-row flex-col-reverse items-start w-full justify-center lg:gap-24 gap-12 lg:p-16 md:p-12 p-8   ${
                   index % 2 !== 0 ? "bg-section" : "bg-primary"
                 }`}
               >
@@ -561,6 +455,7 @@ export default function IndexPage() {
                         index % 2 === 0 ? "text-[#001412]" : "text-primary"
                       }`}
                     >
+                      {index < 9 ? "0" : ""}
                       {index + 1}
                     </h1>
                     <div>
@@ -572,7 +467,7 @@ export default function IndexPage() {
                         {e.title}
                       </h1>
                       <p
-                        className={`text-lg max-w-lg whitespace-pre-wrap leading-[24px] ${
+                        className={`text-lg max-w-lg whitespace-pre-wrap leading-[20px] ${
                           index % 2 === 0
                             ? "text-[#001412]/80"
                             : "text-white/80"
@@ -585,7 +480,7 @@ export default function IndexPage() {
                   <img
                     src="https://images.pexels.com/photos/13260079/pexels-photo-13260079.jpeg"
                     alt="Section Image"
-                    className={`w-full select-none max-w-[400px] aspect-[3/2] h-auto object-cover rounded-lg`}
+                    className={`w-full select-none max-w-[400px] aspect-[3/2.5] h-fit object-cover rounded-lg`}
                     draggable={false}
                   />
                 </div>
@@ -684,12 +579,6 @@ export default function IndexPage() {
             <span className="heading-light">HERE{"'"}S WHAT</span>
             <br /> OUR CLIENTS SAY
           </h1>
-          <p className="text-foreground/80 text-center max-w-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            tempore nisi dolorem officiis at asperiores omnis. Voluptatem sequi
-            a saepe veniam fugiat tempore, error perspiciatis quasi, eveniet
-            atque quia esse?
-          </p>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full lg:px-8 px-4 items-start justify-center gap-8 mt-16 sticky top-0 max-w-7xl mx-auto">
           {testimonials.map((testimonial) => (
@@ -730,7 +619,7 @@ export default function IndexPage() {
         </div>
       </section>
       <section
-        id={"services"}
+        id={"faq"}
         className="flex bg-section-2  lg:gap-16 gap-8 py-24 lg:px-8 px-4"
       >
         <div className="flex relative md:flex-row flex-col items-start justify-between  w-full max-w-7xl mx-auto lg:gap-48 gap-8">
