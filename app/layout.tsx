@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { NextFontWithVariable } from "next/dist/compiled/@next/font"
 import { Urbanist } from "next/font/google"
 import localFont from "next/font/local"
+import Head from "next/head"
 import { NextUIProvider } from "@nextui-org/react"
 
 import { siteConfig } from "@/config/site"
@@ -91,6 +92,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning={true}>
+        <Head>
+          <link
+            rel="stylesheet"
+            type="text/css"
+            charSet="UTF-8"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
+        </Head>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased selection:bg-primary/30 selection:text-foreground ",

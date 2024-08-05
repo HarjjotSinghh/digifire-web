@@ -248,3 +248,19 @@ h6 {
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+.slick-track {
+  @apply !flex !flex-row lg:!gap-16 md:!gap-12 !gap-8 !overflow-x-hidden;
+}
+
+.slick-slide {
+  @apply !w-fit;
+}
+
+.awssld__content {
+  @apply !bg-transparent;
+}
+
+.awssld__bullets button {
+  background-color: hsl(var(--primary)) !important;
+}
