@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Instagram, Linkedin } from "lucide-react"
 
@@ -46,15 +47,38 @@ const SiteFooter = () => {
     >
       <div className="flex flex-col md:flex-row gap-8 justify-between mx-auto max-w-7xl">
         <div className="mb-4 md:mb-0">
-          <h1 className="text-2xl font-bold">digifire</h1>
+          <div className="flex items-start gap-1 justify-center flex-row">
+            <Image
+              className="mb-6 dark:invert-0 invert"
+              src="/images/logo-text.svg"
+              alt="Logo"
+              width={230}
+              height={50}
+            />
+            <Image
+              className="mb-6 dark:invert-0 invert"
+              src="/images/icon.svg"
+              alt="Logo"
+              width={30}
+              height={30}
+            />
+          </div>
           <div className="flex space-x-2 mt-2">
-            <Link href={"#"}>
-              <Button size={"icon"} className="px-3 rounded-full">
+            <Link
+              href={"https://www.linkedin.com/in/digi-fire-4b6595321/"}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size={"icon"} className="!size-12  rounded-full">
                 <Linkedin className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href={"#"}>
-              <Button size={"icon"} className="px-3 rounded-full">
+            <Link
+              href={"https://www.instagram.com/digifireio"}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size={"icon"} className="!size-12 px-3 rounded-full">
                 <Instagram className="h-5 w-5" />
               </Button>
             </Link>
