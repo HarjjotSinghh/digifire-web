@@ -3,38 +3,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Instagram, Linkedin } from "lucide-react"
 
-import { Button } from "./ui/button"
+import { navLinks } from "@/config/site"
 
-const footerLinks = [
-  {
-    title: "About Us",
-    href: "/#about",
-  },
-  {
-    title: "Make Your Move",
-    href: "/#services",
-  },
-  {
-    title: "Hire",
-    href: "/#how-we-work",
-  },
-  {
-    title: "See All Jobs",
-    href: "/#testimonials",
-  },
-  // {
-  //   title: "Strategies",
-  //   href: "/#strategies",
-  // },
-  // {
-  //   title: "Get In Touch",
-  //   href: "/#get-in-touch",
-  // },
-  {
-    title: "Contact Us",
-    href: "/#contact",
-  },
-]
+import { Button } from "./ui/button"
 
 const accentClasses = "text-foreground"
 const mutedForegroundClasses =
@@ -90,7 +61,7 @@ const SiteFooter = () => {
               Explore
             </h2>
             <ul className="space-y-2">
-              {footerLinks.map((link) => (
+              {navLinks.map((link) => (
                 <li>
                   <Link
                     href={link.href}

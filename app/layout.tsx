@@ -9,6 +9,7 @@ import { NextUIProvider } from "@nextui-org/react"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import SiteFooter from "@/components/site-footer"
+import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -115,9 +116,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <NextUIProvider>
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem={false}
+              forcedTheme="dark"
+            >
               <main className="relative flex min-h-screen flex-col">
-                {/* <SiteHeader /> */}
+                <SiteHeader />
                 <div className="flex-1">{children}</div>
                 <SiteFooter />
               </main>

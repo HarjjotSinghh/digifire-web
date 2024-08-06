@@ -8,21 +8,7 @@ import {
 
 export type SiteConfig = typeof siteConfig
 
-export const siteConfig = {
-  name: "Digifire",
-  description:
-    "A marketing agency that helps brands grow and succeed in the digital space with a fresh approach. We craft captivating campaigns that leave a lasting impact.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-  ],
-  links: {
-    twitter: "https://twitter.com/digifire",
-    github: "https://github.com/HarjjotSinghh",
-  },
-}
+
 
 export const services = [
   {
@@ -56,3 +42,45 @@ export const services = [
     // Icon: <SettingsIcon className="size-6" />,
   },
 ]
+
+export const navLinks = [
+  {
+    title: "About Us",
+    href: "/#about",
+  },
+  {
+    title: "Make Your Move",
+    href: "/#services",
+  },
+  {
+    title: "Hire",
+    href: "/#how-we-work",
+  },
+  {
+    title: "See All Jobs",
+    href: "/#testimonials",
+  },
+  // {
+  //   title: "Strategies",
+  //   href: "/#strategies",
+  // },
+  // {
+  //   title: "Get In Touch",
+  //   href: "/#get-in-touch",
+  // },
+  {
+    title: "Contact Us",
+    href: "/#contact",
+  },
+]
+
+export const siteConfig = {
+  name: "Digifire",
+  description:
+    "A marketing agency that helps brands grow and succeed in the digital space with a fresh approach. We craft captivating campaigns that leave a lasting impact.",
+  mainNav: navLinks,
+  links: {
+    twitter: "https://twitter.com/digifire",
+    github: "https://github.com/HarjjotSinghh",
+  },
+}
