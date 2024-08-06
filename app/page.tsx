@@ -205,7 +205,7 @@ const howWeWork = [
   },
 ]
 
-const stratergies = [
+const strategies = [
   {
     title: "AUDIENCE SEGMENTATION",
     description:
@@ -670,12 +670,12 @@ export default function IndexPage() {
         <div className="flex flex-col items-center justify-center mx-auto max-w-7xl  lg:px-8 px-4 w-full">
           <div>
             <h4 className="font-arteria font-extrabold underline decoration-primary text-center">
-              STRATERGIES
+              strateGIES
             </h4>
             <h1 className="font-arteria lg:text-8xl md:text-7xl text-6xl [font-weight:800] lg:leading-[84px] leading-[52px] !mb-0 text-center ">
               <span className="heading-light">UNVEILING THE</span>
               <br />
-              STRATERGIES
+              strateGIES
             </h1>
             <p className="text-foreground/80 text-center max-w-xl mt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
@@ -685,24 +685,24 @@ export default function IndexPage() {
             </p>
           </div>
           <div className="flex flex-row flex-wrap items-start justify-center lg:gap-8 gap-6 mt-16  sticky top-0">
-            {stratergies
+            {strategies
               .sort((a, b) => a.title.localeCompare(b.title))
-              .map((stratergy) => (
+              .map((strategy) => (
                 <div
-                  key={stratergy.title}
+                  key={strategy.title}
                   className={`flex flex-row items-start justify-start gap-0 rounded-lg p-6 border-2 border-primary/5 `}
                 >
                   <div className="flex flex-col items-center justify-center gap-0 rounded-lg">
                     <h1
                       className={`font-arteria text-primary text-center [font-weight:800] uppercase !mb-2 `}
                     >
-                      {stratergy.title.split(" ")[0]} <br />{" "}
-                      {stratergy.title.split(" ")[1]}
+                      {strategy.title.split(" ")[0]} <br />{" "}
+                      {strategy.title.split(" ")[1]}
                     </h1>
                     <p
                       className={`text-foreground/80 text-base max-w-xs text-center`}
                     >
-                      {stratergy.description}
+                      {strategy.description}
                     </p>
                   </div>
                 </div>
