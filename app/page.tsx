@@ -522,9 +522,9 @@ export default function IndexPage() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth
-      console.log("Window width:", width)
+      // console.log("Window width:", width)
       if (width > 1278) {
-        console.log("Set to lg")
+        // console.log("Set to lg")
         setScreenSize("lg")
       } else if (width > 768) {
         setScreenSize("md")
@@ -577,7 +577,8 @@ export default function IndexPage() {
         className="flex bg-section flex-col items-center justify-center gap-4 py-24 lg:px-8 px-4"
       >
         <h1 className="font-arteria lg:text-8xl md:text-7xl text-6xl [font-weight:800] text-center lg:leading-[84px] leading-[52px]">
-          <span className="heading-light">WE{"'"} ALL ABOUT</span> BRINGING YOUR
+          <span className="heading-light">WE{"'"}RE ALL ABOUT</span> BRINGING
+          YOUR
           <br /> BRAND TO{" "}
           <span className="heading-light">
             LIFE IN THE DIGITAL SPACE
