@@ -18,7 +18,7 @@ const SiteFooter = () => {
     >
       <div className="flex flex-col md:flex-row gap-8 justify-between mx-auto max-w-7xl">
         <div className="mb-4 md:mb-0">
-          <div className="flex items-start gap-1 justify-center flex-row">
+          <div className="flex items-start gap-1 justify-start flex-row">
             <Image
               className="mb-6 dark:invert-0 invert"
               src="/images/logo-text.svg"
