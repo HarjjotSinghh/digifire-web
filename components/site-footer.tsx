@@ -11,25 +11,25 @@ const footerLinks = [
     href: "/#about",
   },
   {
-    title: "Services",
+    title: "Make Your Move",
     href: "/#services",
   },
   {
-    title: "How We Work",
+    title: "Hire",
     href: "/#how-we-work",
   },
   {
-    title: "Testimonials",
+    title: "See All Jobs",
     href: "/#testimonials",
   },
-  {
-    title: "Strategies",
-    href: "/#strategies",
-  },
-  {
-    title: "Get In Touch",
-    href: "/#get-in-touch",
-  },
+  // {
+  //   title: "Strategies",
+  //   href: "/#strategies",
+  // },
+  // {
+  //   title: "Get In Touch",
+  //   href: "/#get-in-touch",
+  // },
   {
     title: "Contact Us",
     href: "/#contact",
@@ -107,8 +107,8 @@ const SiteFooter = () => {
               Contact Us
             </h2>
             <div className="flex flex-col justify-center items-start gap-2 text-lg">
-              <Link href={"mailto:hello@digifire.io"} className="">
-                <p className={mutedForegroundClasses}>hello@digifire.io</p>
+              <Link href={"mailto:info@digifire.io"} className="">
+                <p className={mutedForegroundClasses}>info@digifire.io</p>
               </Link>
               <Link href={"tel:+91916012020"} className="">
                 <p className={mutedForegroundClasses}>+91 99160 12020</p>
