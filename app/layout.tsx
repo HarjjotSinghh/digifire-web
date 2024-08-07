@@ -105,6 +105,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="0c00d779-f61f-4541-9b57-6d6d0dfb61d3"
+          ></script>
         </Head>
         <body
           className={cn(
