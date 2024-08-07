@@ -91,7 +91,7 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  ReactGA.initialize("GTM-5LTLG9JF")
+  ReactGA.initialize("G-KJ8B7BXSCF")
   return (
     <>
       <html lang="en" suppressHydrationWarning={true}>
