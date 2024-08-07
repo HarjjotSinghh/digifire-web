@@ -137,7 +137,7 @@ export default function IndexPage() {
               crafted to meet your business goals and drive measurable results.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-0 mt-16 w-[100dvw] sticky top-0">
+          <div className="flex flex-col items-center justify-center gap-0 mt-16 w-full sticky top-0">
             {howWeWork.map((e, index) => (
               <div
                 key={e.title}
@@ -205,7 +205,7 @@ export default function IndexPage() {
           loop
           muted
           src="https://videos.pexels.com/video-files/3192362/3192362-uhd_2560_1440_25fps.mp4" // Replace with your strategies video
-          className=" w-[100dvw] h-auto object-cover z-10"
+          className=" w-full h-auto object-cover z-10"
         />
         <div className="flex flex-col items-center justify-center mx-auto max-w-7xl  lg:px-8 px-4 w-full">
           <div>
