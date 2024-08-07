@@ -299,8 +299,8 @@ export default function IndexPage() {
               depth: 150,
               scale: 0.99,
             }}
-            lazyPreloadPrevNext={40}
-            loopAdditionalSlides={40}
+            // lazyPreloadPrevNext={40}
+            // loopAdditionalSlides={40}
             thumbs={{ swiper: thumbsSwiper }}
             // onSlideChange={() => console.log("slide change")}
             // onSwiper={(swiper) => console.log(swiper)}
