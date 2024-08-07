@@ -5,6 +5,7 @@ import { Urbanist } from "next/font/google"
 import localFont from "next/font/local"
 import Head from "next/head"
 import { NextUIProvider } from "@nextui-org/react"
+import ReactGA from "react-ga4"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -90,6 +91,7 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  ReactGA.initialize("GTM-5LTLG9JF")
   return (
     <>
       <html lang="en" suppressHydrationWarning={true}>
