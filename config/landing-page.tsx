@@ -160,8 +160,7 @@ export const howWeWork = [
       • Mobile App Marketing\n
       • SMS Marketing\n
       • Mobile Advertising`,
-    imageSrc:
-      "https://www.feedough.com/wp-content/uploads/2018/02/MOBILE-MARKETING-22.png",
+    imageSrc: "https://www.bedigitech.com/img/mobile-marketing-scaled.jpg",
   },
   {
     title: "Affiliate Marketing",
