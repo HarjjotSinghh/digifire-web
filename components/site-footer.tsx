@@ -20,14 +20,16 @@ const SiteFooter = () => {
         <div className="mb-4 md:mb-0">
           <div className="flex items-start gap-1 justify-start flex-row">
             <Image
-              className="mb-6 dark:invert-0 invert"
+              className="mb-6 dark:invert-0 invert select-none"
               src="/images/logo-text.svg"
               alt="Logo"
+              draggable={false}
               width={230}
               height={50}
             />
             <Image
-              className="mb-6 dark:invert-0 invert"
+              className="mb-6 dark:invert-0 invert select-none"
+              draggable={false}
               src="/images/icon.svg"
               alt="Logo"
               width={30}
