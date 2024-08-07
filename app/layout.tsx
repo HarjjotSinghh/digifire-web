@@ -96,6 +96,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <>
       <html lang="en" suppressHydrationWarning={true}>
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-KJ8B7BXSCF"
+          ></script>
+          <script async src="/google-analytics.js" />
           <link
             rel="stylesheet"
             type="text/css"
