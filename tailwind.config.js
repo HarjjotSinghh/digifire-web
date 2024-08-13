@@ -67,6 +67,10 @@ module.exports = {
           DEFAULT: "hsl(var(--section-3))",
           foreground: "hsl(var(--section-3-foreground))",
         },
+        "section-4": {
+          DEFAULT: "hsl(var(--section-4))",
+          foreground: "hsl(var(--section-4-foreground))",
+        },
       },
       borderRadius: {
         lg: `var(--radius)`,

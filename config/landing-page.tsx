@@ -49,143 +49,154 @@ export const services = [
 export const howWeWork = [
   {
     title: "Strategy & Consulting",
-    description: `At Digifire.io, we believe that a solid strategy is the foundation of any successful marketing campaign. Our expert consultants work closely with you to understand your business goals and craft a bespoke digital marketing strategy that drives results. Services include:
-      \n
-      • Digital Marketing Strategy Development\n
-      • Market Research and Analysis\n
-      • Competitor Analysis\n
-      • Brand Strategy and Positioning\n
-      • Customer Persona Development\n
-      • KPI Setting and Tracking\n
-      • Consulting and Auditing`,
+    description: `At Digifire.io, we believe that a solid strategy is the foundation of any successful marketing campaign. Our expert consultants work closely with you to understand your business goals and craft a bespoke digital marketing strategy that drives results.`,
+    points: [
+      "Digital Marketing Strategy Development",
+      "Market Research and Analysis",
+      "Competitor Analysis",
+      "Brand Strategy and Positioning",
+      "Customer Persona Development",
+      "KPI Setting and Tracking",
+      "Consulting and Auditing",
+    ],
     imageSrc: "https://projectcor.com/wp-content/uploads/2021/10/79.jpg",
   },
   {
     title: "Content Marketing",
-    description: `Engaging and high-quality content is crucial for attracting and retaining customers. Our content marketing services are designed to create and distribute valuable content that resonates with your target audience. Services include:
-      \n
-      • Content Strategy Development\n
-      • Blog Writing and Management\n
-      • Copywriting\n
-      • Infographic Design\n
-      • Video Production\n
-      • Podcast Production\n
-      • Case Studies and White Papers`,
+    description: `Engaging and high-quality content is crucial for attracting and retaining customers. Our content marketing services are designed to create and distribute valuable content that resonates with your target audience.`,
+    points: [
+      "Content Strategy Development",
+      "Blog Writing and Management",
+      "Copywriting",
+      "Infographic Design",
+      "Video Production",
+      "Podcast Production",
+      "Case Studies and White Papers",
+    ],
     imageSrc:
       "https://www.socialpilot.co/wp-content/uploads/2021/09/7-Steps-to-Create-a-Victorious-B2B-Content-Marketing-Strategy.jpg",
   },
   {
     title: "Search Engine Optimization",
-    description: `Increase your online visibility and attract more organic traffic with our comprehensive SEO services. We use the latest techniques and best practices to ensure your website ranks high on search engines. Services include:
-      \n
-      • On-Page SEO\n
-      • Off-Page SEO\n
-      • Technical SEO\n
-      • Local SEO\n
-      • SEO Audits\n
-      • Keyword Research and Analysis\n
-      • Link Building`,
+    description: `Increase your online visibility and attract more organic traffic with our comprehensive SEO services. We use the latest techniques and best practices to ensure your website ranks high on search engines.`,
+    points: [
+      "On-Page SEO",
+      "Off-Page SEO",
+      "Technical SEO",
+      "Local SEO",
+      "SEO Audits",
+      "Keyword Research and Analysis",
+      "Link Building",
+    ],
     imageSrc: "https://track2training.com/wp-content/uploads/2021/09/asdf.jpg",
   },
   {
     title: "Pay-Per-Click Advertising",
-    description: `Maximize your ROI with targeted PPC campaigns. Our team of experts will help you create, manage, and optimize your ads to reach your desired audience effectively. Services include:
-      \n
-      • Google Ads Management\n
-      • Bing Ads Management\n
-      • Display Advertising\n
-      • Retargeting Campaigns\n
-      • YouTube Advertising\n
-      • Shopping Ads`,
+    description: `Maximize your ROI with targeted PPC campaigns. Our team of experts will help you create, manage, and optimize your ads to reach your desired audience effectively.`,
+    points: [
+      "Google Ads Management",
+      "Bing Ads Management",
+      "Display Advertising",
+      "Retargeting Campaigns",
+      "YouTube Advertising",
+      "Shopping Ads",
+    ],
     imageSrc:
       "https://lh4.googleusercontent.com/eld9xY720iDI-VNkH92ZaMIO0gojvGWLDd3r_xT-JKW14hb0EO0SxIWsH4cZHJO8BGpQhzj4UFh57xx7XNRXwtzoIaUoNW75Gv9nG10WGZ7wD40KBeO5e_VTEzhcVmZuLWu8WrsBWb91n0PfBs3UGnSbbpSlD-PC_ZYTUJ0MpnLIu29z_-RbVMq4QQ-bsw",
   },
   {
     title: "Social Media Marketing",
-    description: `Harness the power of social media to build your brand and engage with your audience. We offer comprehensive social media marketing services to help you create a strong online presence. Services include:
-      \n
-      • Social Media Strategy\n
-      • Profile Setup and Optimization\n
-      • Content Creation and Posting\n
-      • Community Management\n
-      • Social Media Advertising\n
-      • Influencer Marketing\n
-      • Social Media Analytics and Reporting`,
+    description: `Harness the power of social media to build your brand and engage with your audience. We offer comprehensive social media marketing services to help you create a strong online presence.`,
+    points: [
+      "Social Media Strategy",
+      "Profile Setup and Optimization",
+      "Content Creation and Posting",
+      "Community Management",
+      "Social Media Advertising",
+      "Influencer Marketing",
+      "Social Media Analytics and Reporting",
+    ],
     imageSrc:
       "https://cxgiae.com/wp-content/uploads/2022/06/Depositphotos_stock-illustration-go-green-social-media-marketing.html_S.jpg",
   },
   {
     title: "Email Marketing",
-    description: `Stay connected with your customers and drive conversions with personalized email marketing campaigns. Our services ensure that your emails are engaging, relevant, and effective. Services include:
-      \n
-      • Email Campaign Strategy\n
-      • Email List Building\n
-      • Email Design and Development\n
-      • Automated Email Sequences\n
-      • Newsletter Management\n
-      • A/B Testing and Optimization`,
+    description: `Stay connected with your customers and drive conversions with personalized email marketing campaigns. Our services ensure that your emails are engaging, relevant, and effective.`,
+    points: [
+      "Email Campaign Strategy",
+      "Email List Building",
+      "Email Design and Development",
+      "Automated Email Sequences",
+      "Newsletter Management",
+      "A/B Testing and Optimization",
+    ],
     imageSrc:
       "https://dandelionmarketing.com/wp-content/uploads/2021/01/email-marketing-relevance-01.png",
   },
   {
     title: "Web Development and Design",
-    description: `Create a stunning online presence with our web development and design services. We build responsive, user-friendly websites that not only look great but also perform well. Services include:
-      \n
-      • Website Design and Redesign\n
-      • Responsive Web Development\n
-      • E-commerce Development\n
-      • Landing Page Design\n
-      • UI/UX Design\n
-      • Website Maintenance and Updates`,
+    description: `Create a stunning online presence with our web development and design services. We build responsive, user-friendly websites that not only look great but also perform well.`,
+    points: [
+      "Website Design and Redesign",
+      "Responsive Web Development",
+      "E-commerce Development",
+      "Landing Page Design",
+      "UI/UX Design",
+      "Website Maintenance and Updates",
+    ],
     imageSrc:
       "https://fronty.com/static/uploads/1.11-30.11/development%20trend/The_Biggest_Web_Development_Trends_in_2022.png",
   },
   {
     title: "E-commerce Marketing",
-    description: `Drive sales and grow your online store with our e-commerce marketing services. We offer a range of solutions to help you optimize your product listings and increase conversions. Services include:
-      \n
-      • E-commerce SEO\n
-      • Product Listing Optimization\n
-      • E-commerce PPC\n
-      • Cart Abandonment Solutions\n
-      • E-commerce Email Marketing`,
+    description: `Drive sales and grow your online store with our e-commerce marketing services. We offer a range of solutions to help you optimize your product listings and increase conversions.`,
+    points: [
+      "E-commerce SEO",
+      "Product Listing Optimization",
+      "E-commerce PPC",
+      "Cart Abandonment Solutions",
+      "E-commerce Email Marketing",
+    ],
     imageSrc:
       "https://solwincdn-79e1.kxcdn.com/wp-content/uploads/2018/10/E-Commerce-Marketing-Tips.png",
   },
   {
     title: "Mobile Marketing",
-    description: `Reach your audience on the go with our mobile marketing services. From app marketing to SMS campaigns, we have the expertise to ensure your mobile presence is strong. Services include:
-      \n
-      • App Store Optimization (ASO)\n
-      • Mobile App Marketing\n
-      • SMS Marketing\n
-      • Mobile Advertising`,
+    description: `Reach your audience on the go with our mobile marketing services. From app marketing to SMS campaigns, we have the expertise to ensure your mobile presence is strong.`,
+    points: [
+      "App Store Optimization (ASO)",
+      "Mobile App Marketing",
+      "SMS Marketing",
+      "Mobile Advertising",
+    ],
     imageSrc: "https://www.bedigitech.com/img/mobile-marketing-scaled.jpg",
   },
   {
     title: "Affiliate Marketing",
-    description: `Expand your reach and boost your sales with our affiliate marketing services. We help you set up and manage effective affiliate programs that drive results. Services include:
-      \n
-      • Affiliate Program Setup\n
-      • Affiliate Recruitment\n
-      • Affiliate Management\n
-      • Performance Tracking`,
+    description: `Expand your reach and boost your sales with our affiliate marketing services. We help you set up and manage effective affiliate programs that drive results.`,
+    points: [
+      "Affiliate Program Setup",
+      "Affiliate Recruitment",
+      "Affiliate Management",
+      "Performance Tracking",
+    ],
     imageSrc:
       "https://www.rasmussen.edu/images/rasmussenlibraries/admissions/what-is-affiliate-marketing-S.jpg",
   },
   {
     title: "Creative Services",
-    description: `Stand out from the crowd with our creative services. Our talented team of designers and creatives will help you build a strong brand identity that resonates with your audience. Services include:
-      \n
-      • Branding and Identity Design\n
-      • Logo Design\n
-      • Brand Guidelines Development\n
-      • Visual Branding\n
-      • Graphic Design\n
-      • Video Editing\n
-      • Photography\n
-      • Animation and Motion Graphics\n
-      • Packaging Design`,
+    description: `Stand out from the crowd with our creative services. Our talented team of designers and creatives will help you build a strong brand identity that resonates with your audience.`,
+    points: [
+      "Branding and Identity Design",
+      "Logo Design",
+      "Brand Guidelines Development",
+      "Visual Branding",
+      "Graphic Design",
+      "Video Editing",
+      "Photography",
+      "Animation and Motion Graphics",
+      "Packaging Design",
+    ],
     imageSrc:
       "https://www.aonead.in/uploads/service/1934823-1000x1000_1711532509.jpg",
   },

@@ -73,7 +73,7 @@ export function MainNav({ items }: MainNavProps) {
                   src="/images/logo.svg"
                   alt="Logo"
                   draggable={false}
-                  className="select-none"
+                  className="select-none mt-4"
                   width={230}
                   height={50}
                 />

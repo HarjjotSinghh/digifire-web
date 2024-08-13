@@ -49,25 +49,21 @@ export const navLinks = [
     href: "/#about",
   },
   {
-    title: "Make Your Move",
-    href: "/#services",
-  },
-  {
-    title: "Hire",
+    title: "How We Work",
     href: "/#how-we-work",
   },
   {
-    title: "See All Jobs",
+    title: "Testimonials",
     href: "/#testimonials",
   },
-  // {
-  //   title: "Strategies",
-  //   href: "/#strategies",
-  // },
-  // {
-  //   title: "Get In Touch",
-  //   href: "/#get-in-touch",
-  // },
+  {
+    title: "Strategies",
+    href: "/#strategies",
+  },
+  {
+    title: "FAQ",
+    href: "/#faq",
+  },
   {
     title: "Contact Us",
     href: "/#contact",

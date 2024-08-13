@@ -13,6 +13,7 @@ import "swiper/css/effect-coverflow"
 import "swiper/css/effect-flip"
 import "swiper/css/effect-creative"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 import {
   faq,
@@ -72,19 +73,23 @@ export default function IndexPage() {
             IGNITE YOUR <br /> DIGITAL PRESENCE
           </h1>
           <div className="flex lg:flex-row  w-full items-center md:justify-center justify-center gap-4 mt-8">
-            <Button
-              className="rounded-full font-extrabold font-arteria text-2xl pt-0.5 h-12 w-full max-w-[200px]"
-              size={"lg"}
-            >
-              GET STARTED
-            </Button>
-            <Button
-              className="rounded-full font-extrabold font-arteria text-2xl pt-0.5 h-12 w-full max-w-[200px]"
-              size={"lg"}
-              variant="secondary" // Assuming you have a secondary variant
-            >
-              LEARN MORE
-            </Button>
+            <Link href={"/#about"}>
+              <Button
+                className="rounded-full font-extrabold font-arteria text-2xl pt-0.5 h-12 w-full max-w-[200px]"
+                size={"lg"}
+              >
+                GET STARTED
+              </Button>
+            </Link>
+            <Link href={"/#how-we-work"}>
+              <Button
+                className="rounded-full font-extrabold font-arteria text-2xl pt-0.5 h-12 w-full max-w-[200px]"
+                size={"lg"}
+                variant="secondary"
+              >
+                LEARN MORE
+              </Button>
+            </Link>
           </div>
           <div className="flex lg:flex-row  w-full items-center md:justify-between justify-center gap-4 mt-4">
             <h1 className="font-arteria md:block hidden left w-fit lg:text-4xl md:text-3xl text-2xl leading-snug [font-weight:800] text-center">
@@ -141,15 +146,15 @@ export default function IndexPage() {
             {howWeWork.map((e, index) => (
               <div
                 key={e.title}
-                className={`flex xl:sticky xl:top-20 md:flex-row flex-col-reverse items-start w-full justify-center lg:gap-24 gap-12 lg:p-16 md:p-12 p-8   ${
-                  index % 2 !== 0 ? "bg-section" : "bg-primary"
+                className={`flex xl:sticky xl:top-20 md:flex-row flex-col-reverse items-start w-full justify-center lg:gap-24 gap-12 lg:p-16 md:p-12 p-8 ${
+                  index % 2 !== 0 ? "bg-section-4" : "bg-section"
                 }`}
               >
                 <div className="mx-auto max-w-[1440px] w-full flex lg:flex-row flex-col-reverse lg:gap-16 gap-8 ">
                   <div className="flex md:flex-row flex-col items-start justify-start lg:gap-16 gap-4 w-full">
                     <h1
                       className={`font-arteria lg:-mb-4 !mb-0 lg:text-[200px] md:text-9xl text-8xl [font-weight:1000] uppercase ${
-                        index % 2 === 0 ? "text-[#001412]" : "text-primary"
+                        index % 2 === 0 ? "text-primary" : "text-primary"
                       }`}
                     >
                       {index < 9 ? "0" : ""}
@@ -158,33 +163,38 @@ export default function IndexPage() {
                     <div>
                       <h1
                         className={`font-arteria lg:text-7xl md:text-6xl text-5xl [font-weight:800] uppercase !mb-2 ${
-                          index % 2 === 0 ? "text-[#001412]" : "text-primary"
+                          index % 2 === 0 ? "text-primary" : "text-primary"
                         }`}
                       >
                         {e.title}
                       </h1>
                       <p
                         className={`text-lg max-w-lg whitespace-pre-wrap leading-[20px] ${
-                          index % 2 === 0
-                            ? "text-[#001412]/80"
-                            : "text-white/80"
+                          index % 2 === 0 ? "text-white/80" : "text-white/80"
                         }`}
                       >
                         {e.description}
                       </p>
+                      <ul className="list-inside list-decimal text-balance mt-4">
+                        {e.points.map((point, idx) => (
+                          <li key={idx} className="text-white/80">
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                   <div className="relative">
                     <img
                       src={e.imageSrc}
-                      alt={e.title + "Digifire Image"}
-                      className={`w-full select-none lg:max-w-[500px] max-w-[350px] aspect-[3/2.5] h-fit object-cover rounded-lg`}
+                      alt={e.title + " Digifire Image"}
+                      className="w-full select-none lg:max-w-[500px] max-w-[350px] aspect-[3/2.5] h-fit object-cover rounded-lg"
                       draggable={false}
                     />
                     <div
                       className={cn(
                         "absolute inset-0 w-full select-none lg:max-w-[500px] max-w-[350px] aspect-[3/2.5] h-fit bg-gradient-to-b from-transparent rounded-lg",
-                        index % 2 !== 0 ? "to-section/30" : "to-primary/30"
+                        index % 2 !== 0 ? "to-section-4/10" : "to-section/10"
                       )}
                     />
                   </div>
